@@ -1,7 +1,7 @@
 from turtle import Screen
-from Resources.Paddle import Paddle
-from Resources.Ball import Ball
-from Resources.Scoreboard import Scoreboard
+from components.Paddle import Paddle
+from components.Ball import Ball
+from components.Scoreboard import Scoreboard
 import time
 
 screen = Screen()
@@ -11,18 +11,17 @@ screen.title('Ping Pong')
 screen.tracer(0)
 
 right = Paddle((350, 0))
+right.color("cyan")
 left = Paddle((-350, 0))
+left.color("yellow")
 
 screen.listen()
-
 screen.onkeypress(right.move_up, 'Up')
 screen.onkeypress(right.move_down, 'Down')
-
 screen.onkeypress(left.move_up, 'w')
 screen.onkeypress(left.move_down, 's')
 
 ball = Ball()
-
 scoreboard = Scoreboard()
 
 game_on = True
@@ -47,14 +46,5 @@ while game_on:
     if ball.xcor() < -380:
         ball.reset()
         scoreboard.point_r()
-
-
-
-
-
-
-
-
-
 
 screen.exitonclick()
