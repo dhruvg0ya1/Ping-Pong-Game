@@ -35,3 +35,11 @@ hit, gaining a little speed each rally so points get harder to hold.
 ## Requirements
 
 Python 3.10+. `turtle` is part of the standard library.
+
+## Interface Screenshots
+
+![Retro Arcade Pong UI](./screenshots/01_ping_pong_gameplay_arena.png)
+
+## Video Walkthrough
+
+A full 1080p Loom-style product walkthrough is available at [`videos/loom_demo_walkthrough.mp4`](./videos/loom_demo_walkthrough.mp4).
